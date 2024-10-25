@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 footer{
-    background-color: #111;
+   
 }
 .footercontainter{
     width: 100%;
@@ -61,7 +61,7 @@ footer{
     opacity: 1;
 }
 .footerBottom{
-    background-color: #000;
+
     padding: 20px;
     text-align: center;
 }
@@ -89,25 +89,24 @@ footer{
     
 .container{
     height: 100vh;
-    background-color: gray;
-    background:rgba(0,0,0,0.7) url(bilder/mapof.jpg);
+    background:rgba(0,0,0,0.65) url(bilder/mapof.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     background-blend-mode: darken;
+    background-size: 2390px 1250px;
 
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:50px 4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
 
     grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main info1"
-    "main info2"
-    "main info3"
-    "main info4"
-    "main info5"
-    "footer footer";
+    ". header header"
+    ". main info1"
+    ". main info2"
+    ". main info3"
+    ". main info4"
+    ". main info5"
+    ". footer footer";
 }
 
 header{
@@ -115,12 +114,13 @@ header{
     background-image: url(bilder/logo.jpg);
     background-repeat: no-repeat;
     padding: 100px;
+    background-position: 5%;
 }
 
-nav{
-}
 
 main{
+    padding: 10px;
+    background-color: rgba(155, 158, 163, 0.243);
     grid-area: main;
 }
 
@@ -130,41 +130,49 @@ footer{
 
 .info1{
     background-image: url(bilder/sweden.png);
-    background-size: 49.4%;
+    background-size: 200px 130px;
     background-repeat: no-repeat;
-    background-color: rgb(0,81, 148);
     grid-area: info1;
+    background-position: 100%;
 }
 
 .info2{
     background-image: url(bilder/Norwayflag.webp);
-    background-size: 47%;
+    background-size: 200px 130px;
     background-repeat: no-repeat;
-    background-color: rgb(209, 5, 42);
     grid-area: info2;
+    background-position: 100%;
 }
 
 .info3{
     background-image: url(bilder/finlang.jpg);
-    background-size: 52%;
+    background-size: 200px 130px;
     background-repeat: no-repeat;
-    background-color: rgb(255, 2255, 255);
     grid-area: info3;
+    background-position: 100%;
 }
 
 .info4{
     background-image: url(bilder/danmarl.jpg);
-    background-size: 52%;
+    background-size: 200px 130px;
     background-repeat: no-repeat;
-    background-color: rgb(229, 24, 55);
     grid-area: info4;
+    background-position: 100%;
 }
 
 .info5{
     background-image: url(bilder/iceland.jpg);
-    background-size: 57%;
+    background-size: 200px 130px;
     background-repeat: no-repeat;
-    background-color: rgb(0, 56, 151);
     grid-area: info5;
+    background-position: 100%;
+}
 
+.box{
+    float: right;
+    width: 200px;
+    height: 100%;
+}
+.home{
+    background-color: transparent;
 }
